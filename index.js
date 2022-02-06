@@ -102,8 +102,22 @@ const writeToFile = data => {
     });
 };
 
-// TODO: Create a function to initialize app
-function init() {}
+// Create a function to initialize app
+const init = () => {
+    return questions
+    // get user answers
+    .then(answers => {
+        return generateMarkdown(answers);
+    })
+    // use data to display on page 
+    .then(data => {
+        return writeToFile(data);
+    })
+    // catch errors
+    .catch(err => {
+        console.log(err);
+    })
+}
 
 // Function call to initialize app
 init();

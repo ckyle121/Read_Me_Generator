@@ -73,6 +73,7 @@ const renderLicenseSection = license => {
 
 // Generate markdown for README
 const generateMarkdown = data => {
+  // get license to pass through as parameters for other functions 
   const license = `${data.license}`;
   return `# ${data.title}
 
