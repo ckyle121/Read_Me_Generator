@@ -66,7 +66,7 @@ const renderLicenseSection = license => {
 
     return `
       ## License
-      This application has the ${data.license}
+      This application has the ${license} 
       For more information about this license, checkout ${renderLicenseLink(license)}
     `;
 };
