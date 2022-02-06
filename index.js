@@ -9,7 +9,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = () => {
     return inquirer.prompt([
         {
-            type: input,
+            type: 'input',
             name: 'github',
             message: 'What is your GitHub Username?',
             validate: githubInput => {
@@ -104,7 +104,7 @@ const writeToFile = data => {
 
 // Create a function to initialize app
 const init = () => {
-    return questions
+    questions()
     // get user answers
     .then(answers => {
         return generateMarkdown(answers);
