@@ -25,7 +25,7 @@ const questions = () => {
             type: 'input',
             name: 'email',
             message: 'What is your e-mail address?',
-            validate: emailInput =>{
+            validate: emailInput => {
                 if (emailInput){
                     return true;
                 } else{
@@ -51,8 +51,8 @@ const questions = () => {
             type: 'input',
             name: 'description',
             message: "Write a short description of your project",
-            validate: descriptioinInput => {
-                if (descriptioinInput){
+            validate: descriptionInput => {
+                if (descriptionInput){
                     return true;
                 } else {
                     console.log('Please provide a short description of your project');
@@ -64,16 +64,8 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Which license does your project have?',
-            choices: ['MIT', 'GNU', 'Apache', 'GPL'],
-            default: ['MIT'],
-            validate: licenseInput => {
-                if (licenseInput){
-                    return true;
-                } else {
-                    console.log('Please choose a license');
-                    return false;
-                }
-            }
+            choices: ['MIT', 'GNU AGPLv3','GNU GPLv3', 'GNU LGPLv3','Apache 2.0', 'Mozilla 2.0', 'Boost Software', 'Unlicense'],
+            default: ['MIT']
         },
         {
             type: 'input',
@@ -98,8 +90,17 @@ const questions = () => {
     ]);
 };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Function to write README file
+const writeToFile = data => {
+    fs.writeFile('README.md', data, err =>{
+        if (err){
+            console.log(err);
+            return;
+        } else {
+            console.log("Your README file has been generated!");
+        }
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {}
