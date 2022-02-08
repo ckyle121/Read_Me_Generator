@@ -3,7 +3,7 @@ const renderLicenseBadge = license => {
   let licenseOption = '';
   let licenseBadge = 'https://img.shields.io/badge/license-' + licenseOption + '-blue';
   // If there is no license, return an empty string
-  if (!license) {
+  if (license === 'None') {
     return '';
   } else if (license === 'MIT') {
     licenseOption = 'MITLicense';
@@ -36,7 +36,7 @@ const renderLicenseBadge = license => {
 const renderLicenseLink = license => {
   let licenseLink = 'https://choosealicense.com/licenses/';
   // If there is no license, return an empty string
-  if (!license) {
+  if (license === 'None') {
     return '';
   } else if (license === 'MIT') {
     return licenseLink = licenseLink + 'mit/';
@@ -60,7 +60,7 @@ const renderLicenseLink = license => {
 // Function that returns the license section of README
 const renderLicenseSection = license => {
     // If there is no license, return an empty string
-    if (!license){
+    if (license === 'None'){
       return ``;
     }
 
