@@ -22,7 +22,7 @@
   Use this app in projects to generate a README so others can know a little about your project. Use inquirer from your command line to answer questions about your project.
   
   View Screencastify for an example: 
-  https://drive.google.com/file/d/1w5z9t64BjPsasKoIDgb_sTSb2MgdbuZs/view
+  https://watch.screencastify.com/v/gbiCnujFPtbIDUUZxO78
 
   ## Tests
   npm tests
