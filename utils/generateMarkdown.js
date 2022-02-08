@@ -30,7 +30,7 @@ const renderLicenseBadge = license => {
     licenseOption = 'TheUnlicense';
     return licenseBadge;
   }
-}
+};
 
 //Function that returns the license link
 const renderLicenseLink = license => {
@@ -61,13 +61,13 @@ const renderLicenseLink = license => {
 const renderLicenseSection = license => {
     // If there is no license, return an empty string
     if (!license){
-      return '';
+      return ``;
     }
 
     return `
-      ## License
-      This application has the ${license} 
-      For more information about this license, checkout ${renderLicenseLink(license)}
+  ## License
+  This application has the ${license} license.
+  For more information about this license, checkout ${renderLicenseLink(license)}
     `;
 };
 
@@ -83,12 +83,12 @@ const generateMarkdown = data => {
   ${renderLicenseBadge(license)}
 
   ## Table of Contents
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Contributing](#Contributing)
-  * [Tests](#Tests)
-  * [Questions](#Questions)
-  * [License](#License)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions](#questions)
 
   ## Installation 
   ${data.install}
