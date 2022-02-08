@@ -1,9 +1,9 @@
-# test
+# Read Me Generator
 
   ## Description 
-  test
+  This application generates a professional README.md file depending on a series of questions a user answers in their command line using Node.js
 
-  ![badge](https://img.shields.io/badge/license-MozillaPublicLicense2.0-yellow)
+  ![badge](https://img.shields.io/badge/license-MITLicense-blue)
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,23 +14,23 @@
   * [Questions](#questions)
 
   ## Installation 
-  test
+  Clone this repo; Install Node.js; Also install the modules file system and inquirer
 
   ## Usage
-  test
+  Use this app in projects to generate a README so others can know a little about your project. Use inquirer from your command line to answer questions about your project.
 
   ## Tests
-  test
+  npm tests
 
   ## Contributing 
-  test
+  Contributors should read the installation instructions
 
   ## Questions
-  If you have any questions about this project, please email me: test
-  Other projects can be found on my GitHub: test
+  If you have any questions about this project, please email me: carolinekyle21@gmail.com
+  Other projects can be found on my GitHub: ckyle121
 
   
   ## License
-  This application has the Mozilla 2.0 license.
-  For more information about this license, checkout https://choosealicense.com/licenses/mpl-2.0/
+  This application has the MIT license.
+  For more information about this license, checkout https://choosealicense.com/licenses/mit/
     
