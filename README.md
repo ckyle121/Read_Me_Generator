@@ -23,6 +23,8 @@
   
   View Screencastify for an example: 
   https://watch.screencastify.com/v/gbiCnujFPtbIDUUZxO78
+  
+  ![image](https://user-images.githubusercontent.com/75647359/153082817-a7ddd9c4-f84a-4569-a54f-54577073b115.png)
 
   ## Tests
   npm tests
