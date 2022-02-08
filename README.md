@@ -14,7 +14,9 @@
   * [Questions](#questions)
 
   ## Installation 
-  Clone this repo; Install Node.js; Also install the modules file system and inquirer
+  Clone this repo
+  Install Node.js
+  Also install the modules file system and inquirer for Node.js
 
   ## Usage
   Use this app in projects to generate a README so others can know a little about your project. Use inquirer from your command line to answer questions about your project.
