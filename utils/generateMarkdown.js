@@ -1,13 +1,12 @@
 // Function that returns a license badge based on which license is passed in
 const renderLicenseBadge = license => {
   let licenseOption = '';
-  let licenseBadge = 'https://img.shields.io/badge/license-' + licenseOption + '-blue';
+  let licenseBadge = 'https://img.shields.io/badge/license-';
   // If there is no license, return an empty string
   if (license === 'None') {
     return '';
   } else if (license === 'MIT') {
-    licenseOption = 'MITLicense';
-    return licenseBadge;
+    return licenseBadge = licenseBadge + 'MITLicense-blue';
   } else if (license === 'GNU AGPLv3') {
     licenseOption = 'GNUAGPLv3';
     return licenseBadge;
@@ -37,7 +36,7 @@ const renderLicenseLink = license => {
   let licenseLink = 'https://choosealicense.com/licenses/';
   // If there is no license, return an empty string
   if (license === 'None') {
-    return '';
+    return licenseLink = '';
   } else if (license === 'MIT') {
     return licenseLink = licenseLink + 'mit/';
   } else if (license === 'GNU AGPLv3') {
