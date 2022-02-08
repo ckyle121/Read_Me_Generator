@@ -1,9 +1,9 @@
-# test 2
+# test
 
   ## Description 
-  this is a test
+  test
 
-  https://img.shields.io/badge/license-MITLicense-blue
+  ![badge](https://img.shields.io/badge/license-MozillaPublicLicense2.0-yellow)
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,23 +14,23 @@
   * [Questions](#questions)
 
   ## Installation 
-  install
+  test
 
   ## Usage
-  usage
+  test
 
   ## Tests
-  here
+  test
 
   ## Contributing 
-  none
+  test
 
   ## Questions
   If you have any questions about this project, please email me: test
-  Other projects can be found on my GitHub: hey
+  Other projects can be found on my GitHub: test
 
   
   ## License
-  This application has the MIT license.
-  For more information about this license, checkout https://choosealicense.com/licenses/mit/
+  This application has the Mozilla 2.0 license.
+  For more information about this license, checkout https://choosealicense.com/licenses/mpl-2.0/
     

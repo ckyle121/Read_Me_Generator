@@ -1,33 +1,26 @@
 // Function that returns a license badge based on which license is passed in
 const renderLicenseBadge = license => {
-  let licenseOption = '';
   let licenseBadge = 'https://img.shields.io/badge/license-';
   // If there is no license, return an empty string
   if (license === 'None') {
     return '';
   } else if (license === 'MIT') {
-    return licenseBadge = licenseBadge + 'MITLicense-blue';
+    return licenseBadge + 'MITLicense-blue'
   } else if (license === 'GNU AGPLv3') {
-    licenseOption = 'GNUAGPLv3';
-    return licenseBadge;
+    return licenseBadge + 'GNUAGPLv3-brightorange';
   } else if (license === 'GNU GPLv3') {
-    licenseOption = 'GNUGPLv3';
-    return licenseBadge;
+    return licenseBadge + 'GNUGPLv3-brightorange';
   } else if (license === 'GNU LGPLv3') {
-    licenseOption = 'GNULGPLv3';
-    return licenseBadge;
+    return licenseBadge + 'GNULGPLv3-brightorange';
   } else if (license === 'Apache 2.0') {
-    licenseOption = 'ApacheLicense2.0';
-    return licenseBadge;
+    return licenseBadge + 'ApacheLicense2.0-brightgreen';
   } else if (license === 'Mozilla 2.0') {
-    licenseOption = 'MozillaPublicLicense2.0';
-    return licenseBadge;
+    return licenseBadge + 'MozillaPublicLicense2.0-yellow'
   } else if (license === 'Boost Software') {
     licenseOption = 'BoostSoftwareLicense1.0';
-    return licenseBadge;
+    return licenseBadge +'BoostSoftwareLicense1.0-blueviolet';
   } else if (license ===  'Unlicense') {
-    licenseOption = 'TheUnlicense';
-    return licenseBadge;
+    return licenseBadge +'TheUnlicense-yellowgreen';
   }
 };
 
@@ -79,7 +72,7 @@ const generateMarkdown = data => {
   ## Description 
   ${data.description}
 
-  ${renderLicenseBadge(license)}
+  ![badge](${renderLicenseBadge(license)})
 
   ## Table of Contents
   * [Installation](#installation)
